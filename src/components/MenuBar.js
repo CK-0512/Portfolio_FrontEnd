@@ -76,7 +76,6 @@ export function MenuBar1() {
                         </NavLink>
                     </li>
                 </ul>
-                <div className="flex flex-1"/>
             </motion.div>
         </>
     );

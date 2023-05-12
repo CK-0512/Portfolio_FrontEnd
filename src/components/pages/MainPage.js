@@ -3,6 +3,7 @@ import { MenuBar1 } from "../MenuBar";
 import { useChangeOpacityMain } from "../Hook";
 
 export default function MainPage() {
+
     const opacityChangeState1 = useChangeOpacityMain(1);
     const opacityChangeState2 = useChangeOpacityMain(2);
     const opacityChangeState3 = useChangeOpacityMain(3);
@@ -52,8 +53,8 @@ export default function MainPage() {
                                     transition: "opacity 3s"
                                 }}
                                 onClick={opacityChangeState1.clickOpacitied}
-                                onMouseOver={opacityChangeState1.opacities === 100 ? true : opacityChangeState1.hoverOpacitied}
-                                onMouseOut={opacityChangeState1.opacities === 100 ? true : opacityChangeState1.clear}
+                                onMouseOver={() => opacityChangeState1.opacities === 100 ? true : opacityChangeState1.hoverOpacitied}
+                                onMouseOut={() => opacityChangeState1.opacities === 100 ? true : opacityChangeState1.clear}
                             />
                             <div
                                 className="
@@ -113,8 +114,8 @@ export default function MainPage() {
                                     transition: "opacity 3s"
                                 }}
                                 onClick={opacityChangeState2.clickOpacitied}
-                                onMouseOver={opacityChangeState2.opacities === 100 ? true : opacityChangeState2.hoverOpacitied}
-                                onMouseOut={opacityChangeState2.opacities === 100 ? true : opacityChangeState2.clear}
+                                onMouseOver={() => opacityChangeState2.opacities === 100 ? true : opacityChangeState2.hoverOpacitied}
+                                onMouseOut={() => opacityChangeState2.opacities === 100 ? true : opacityChangeState2.clear}
                             />
                             <div
                                 className="
@@ -175,8 +176,8 @@ export default function MainPage() {
                                     transition: "opacity 3s"
                                 }}
                                 onClick={opacityChangeState3.clickOpacitied}
-                                onMouseOver={opacityChangeState3.opacities === 100 ? true : opacityChangeState3.hoverOpacitied}
-                                onMouseOut={opacityChangeState3.opacities === 100 ? true : opacityChangeState3.clear}
+                                onMouseOver={() => opacityChangeState3.opacities === 100 ? true : opacityChangeState3.hoverOpacitied}
+                                onMouseOut={() => opacityChangeState3.opacities === 100 ? true : opacityChangeState3.clear}
                             />
                             <div
                                 className="
@@ -235,8 +236,8 @@ export default function MainPage() {
                                     transition: "opacity 3s"
                                 }}
                                 onClick={opacityChangeState4.clickOpacitied}
-                                onMouseOver={opacityChangeState4.opacities === 100 ? true : opacityChangeState4.hoverOpacitied}
-                                onMouseOut={opacityChangeState4.opacities === 100 ? true : opacityChangeState4.clear}
+                                onMouseOver={() => opacityChangeState4.opacities === 100 ? true : opacityChangeState4.hoverOpacitied}
+                                onMouseOut={() => opacityChangeState4.opacities === 100 ? true : opacityChangeState4.clear}
                             />
                             <div
                                 className="
