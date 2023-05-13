@@ -1,9 +1,10 @@
 import { NavLink } from "react-router-dom";
 import { MenuBar1 } from "../MenuBar";
-import { useChangeOpacityMain } from "../Hook";
+import { opacityClear, useChangeOpacityMain } from "../Hook";
 
 export default function MainPage() {
 
+    const opacityClearState = opacityClear();
     const opacityChangeState1 = useChangeOpacityMain(1);
     const opacityChangeState2 = useChangeOpacityMain(2);
     const opacityChangeState3 = useChangeOpacityMain(3);
@@ -11,6 +12,7 @@ export default function MainPage() {
 
     return (
         <>
+        <button onClick={() => opacityClear.clear}>초기화</button>
             <div className="h-full w-full relative">
                 <MenuBar1 />
                 {/* <button onClick={() => setOpacities(50)}>초기화</button> */}
@@ -22,6 +24,7 @@ export default function MainPage() {
                             alt=""
                             className="h-full flex flex-1"
                             style={{
+                                opacity: `${opacityClearState.opacity}%`,
                                 opacity: `${opacityChangeState1.opacities}%`,
                                 transition: "opacity 5s cubic-bezier(0.4, 0, 0.2, 1) 0s"
                             }}
@@ -83,6 +86,7 @@ export default function MainPage() {
                             alt=""
                             className="h-full flex flex-1"
                             style={{
+                                opacity: `${opacityClearState.opacity}%`,
                                 opacity: `${opacityChangeState2.opacities}%`,
                                 transition: "opacity 5s cubic-bezier(0.4, 0, 0.2, 1) 0s"
                             }}
@@ -145,6 +149,7 @@ export default function MainPage() {
                             alt=""
                             className="h-full flex flex-1"
                             style={{
+                                opacity: `${opacityClearState.opacity}%`,
                                 opacity: `${opacityChangeState3.opacities}%`,
                                 transition: "opacity 5s cubic-bezier(0.4, 0, 0.2, 1) 0s"
                             }}
@@ -206,6 +211,7 @@ export default function MainPage() {
                             alt=""
                             className="h-full flex flex-1"
                             style={{
+                                opacity: `${opacityClearState.opacity}%`,
                                 opacity: `${opacityChangeState4.opacities}%`,
                                 transition: "opacity 5s cubic-bezier(0.4, 0, 0.2, 1) 0s"
                             }}
