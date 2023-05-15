@@ -1,21 +1,24 @@
 import { atomFamily, atom } from "recoil";
 import { recoilPersist } from "recoil-persist";
 
-export const { persistAtom: persistAtomMain} = recoilPersist({
-    key: "persistAtomMain"
-})
-
-export const { persistAtom: persistAtom} = recoilPersist({
+export const { persistAtom: persistAtomFamily} = recoilPersist({
     key: "persistAtom"
 })
 
-export const mainOpacityAtomFamily = atomFamily({
-    key:"app/mainAtomFamily",
+/*export const { persistAtom: persistAtom} = recoilPersist({
+    key: "persistAtom"
+})
+*/
+
+export const opacityAtomFamily = atomFamily({
+    key:"app/atomFamily",
     default: (mainNo) => 40,
-    effects_UNSTABLE: [persistAtomMain],
+    effects_UNSTABLE: [persistAtomFamily],
 })
 
 
-export const opacityAtom = atom({
+/*export const opacitySwitchAtom = atom({
     key:"app/mainAtom",
+    default: false
 })
+*/

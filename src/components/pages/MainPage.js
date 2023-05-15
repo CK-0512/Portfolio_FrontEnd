@@ -1,18 +1,23 @@
 import { NavLink } from "react-router-dom";
 import { MenuBar1 } from "../MenuBar";
-import { opacityClear, useChangeOpacityMain } from "../Hook";
+import { UseSwitchChangeOpacity, useChangeOpacity } from "../Hook";
+import { useState } from "react";
 
 export default function MainPage() {
 
-    const opacityClearState = opacityClear();
-    const opacityChangeState1 = useChangeOpacityMain(1);
-    const opacityChangeState2 = useChangeOpacityMain(2);
-    const opacityChangeState3 = useChangeOpacityMain(3);
-    const opacityChangeState4 = useChangeOpacityMain(4);
+    //const controllChangeState = UseSwitchChangeOpacity();
+    const opacityChangeState1 = useChangeOpacity(1);
+    const opacityChangeState2 = useChangeOpacity(2);
+    const opacityChangeState3 = useChangeOpacity(3);
+    const opacityChangeState4 = useChangeOpacity(4);
+
+    const [opacitied, setOpacitied] = useState(0);
 
     return (
         <>
-        <button onClick={() => opacityClear.clear}>초기화</button>
+        <button
+            className="z-50" 
+            onClick={() => setOpacitied(1)}>초기화</button>
             <div className="h-full w-full relative">
                 <MenuBar1 />
                 {/* <button onClick={() => setOpacities(50)}>초기화</button> */}
@@ -24,8 +29,7 @@ export default function MainPage() {
                             alt=""
                             className="h-full flex flex-1"
                             style={{
-                                opacity: `${opacityClearState.opacity}%`,
-                                opacity: `${opacityChangeState1.opacities}%`,
+                                opacity: opacitied === 1 ? "0.4" : `${opacityChangeState1.opacities}`,
                                 transition: "opacity 5s cubic-bezier(0.4, 0, 0.2, 1) 0s"
                             }}
                         />
@@ -86,7 +90,6 @@ export default function MainPage() {
                             alt=""
                             className="h-full flex flex-1"
                             style={{
-                                opacity: `${opacityClearState.opacity}%`,
                                 opacity: `${opacityChangeState2.opacities}%`,
                                 transition: "opacity 5s cubic-bezier(0.4, 0, 0.2, 1) 0s"
                             }}
@@ -149,7 +152,6 @@ export default function MainPage() {
                             alt=""
                             className="h-full flex flex-1"
                             style={{
-                                opacity: `${opacityClearState.opacity}%`,
                                 opacity: `${opacityChangeState3.opacities}%`,
                                 transition: "opacity 5s cubic-bezier(0.4, 0, 0.2, 1) 0s"
                             }}
@@ -211,7 +213,6 @@ export default function MainPage() {
                             alt=""
                             className="h-full flex flex-1"
                             style={{
-                                opacity: `${opacityClearState.opacity}%`,
                                 opacity: `${opacityChangeState4.opacities}%`,
                                 transition: "opacity 5s cubic-bezier(0.4, 0, 0.2, 1) 0s"
                             }}

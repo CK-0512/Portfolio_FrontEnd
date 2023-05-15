@@ -1,8 +1,9 @@
-import { useRecoilState } from "recoil";
-import { mainOpacityAtomFamily, opacityAtom} from "./atoms";
+import { useRecoilRefresher_UNSTABLE, useRecoilState } from "recoil";
+import { opacityAtomFamily} from "./atoms";
+import { useState } from "react";
 
-export function useChangeOpacityMain(mainNo) {
-    const [opacities, setOpacities] = useRecoilState(mainOpacityAtomFamily(mainNo));
+export function useChangeOpacity(mainNo) {
+    const [opacities, setOpacities] = useRecoilState(opacityAtomFamily(mainNo));
 
     const clickOpacitied = () => setOpacities(100);
     const hoverOpacitied = () => setOpacities(99);
@@ -16,13 +17,15 @@ export function useChangeOpacityMain(mainNo) {
     };
 }
 
-export function opacityClear() {
-    const [opacity, setOpacity] = useRecoilState(opacityAtom);
+export function UseSwitchChangeOpacity() {
+    const [changeOpacities, setChangeOpacities] = useState(0);
 
-    const clear = () => setOpacity(40);
+    const switchOn = () => setChangeOpacities(1);
+
+    
 
     return {
-        opacity,
-        clear
+        changeOpacities,
+        switchOn
     };
 }
