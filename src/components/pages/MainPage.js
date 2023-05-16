@@ -90,7 +90,7 @@ export default function MainPage() {
                             alt=""
                             className="h-full flex flex-1"
                             style={{
-                                opacity: `${opacityChangeState2.opacities}%`,
+                                opacity: opacitied === 1 ? "0.4" : `${opacityChangeState1.opacities}`,
                                 transition: "opacity 5s cubic-bezier(0.4, 0, 0.2, 1) 0s"
                             }}
                         />
@@ -152,7 +152,7 @@ export default function MainPage() {
                             alt=""
                             className="h-full flex flex-1"
                             style={{
-                                opacity: `${opacityChangeState3.opacities}%`,
+                                opacity: opacitied === 1 ? "0.4" : `${opacityChangeState1.opacities}`,
                                 transition: "opacity 5s cubic-bezier(0.4, 0, 0.2, 1) 0s"
                             }}
                         />
@@ -213,7 +213,7 @@ export default function MainPage() {
                             alt=""
                             className="h-full flex flex-1"
                             style={{
-                                opacity: `${opacityChangeState4.opacities}%`,
+                                opacity: opacitied === 1 ? "0.4" : `${opacityChangeState1.opacities}`,
                                 transition: "opacity 5s cubic-bezier(0.4, 0, 0.2, 1) 0s"
                             }}
                         />

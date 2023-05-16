@@ -24,6 +24,7 @@ export default function Project() {
                         className="
                     absolute 
                     cursor-pointer
+                    group
                     "
                         style={{
                             top: "0.1%",
@@ -36,7 +37,7 @@ export default function Project() {
                             alt=""
                             className="
                             opacity-20
-                            hover:opacity-100
+                            group-hover:opacity-100
                             transition
                             duration-1000
                             "
@@ -46,6 +47,28 @@ export default function Project() {
                                 height: "99.1vh"
                             }}
                         />
+                        <div
+                                className="
+                        absolute
+                        text-6xl 
+                        font-medium  
+                        text-white
+                        bg-green-300
+                        bg-opacity-50
+                        p-2
+                        rounded-xl
+                        border-2
+                        border-green-500
+                        pointer-events-none
+                        opacity-0
+                        group-hover:opacity-100
+                        transition
+                        duration-1000
+                        "
+                                style={{ top: "50%", left: "45.5%" }}
+                            >
+                                Project
+                            </div>
                     </div>
                 </div>
             </div>

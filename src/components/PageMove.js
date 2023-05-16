@@ -99,7 +99,7 @@ export function GoHome() {
                     src="img/home.png"
                     alt=""
                     className="flex"
-                    style={{ width: "125px" }}
+                    style={{ width: "75%",}}
                 />
                 <div
                     className="

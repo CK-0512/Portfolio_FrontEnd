@@ -19,15 +19,12 @@ export default function Contact() {
                     />
                     <div
                         className="
-                    absolute 
-                    cursor-pointer
-                    opacity-30
-                    hover:opacity-100
-                        transition 
-                        duration-1000
+                        absolute 
+                        cursor-pointer
+                        group
                 "
                         style={{
-                            top: "0.3%",
+                            top: "0.35%",
                             width: "100%",
                             height: "88%"
                         }}
@@ -35,7 +32,30 @@ export default function Contact() {
                         <img
                             src="img/dragon2.png"
                             alt=""
-                            className="h-full w-full" />
+                            className="
+                            h-full 
+                            w-full 
+                            opacity-20
+                            group-hover:opacity-100
+                            transition
+                            duration-1000" 
+                            />
+                            <div
+                                className="
+                        absolute
+                        text-8xl 
+                        font-medium  
+                        text-red-900
+                        pointer-events-none
+                        opacity-0
+                        group-hover:opacity-100
+                        transition
+                        duration-1000
+                        "
+                                style={{ top: "56%", left: "40%" }}
+                            >
+                                Contact
+                            </div>
                     </div>
                 </div>
             </div>
