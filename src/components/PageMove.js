@@ -92,19 +92,17 @@ export function GoHome() {
         absolute
         "
                 style={
-                    { left: "14%", top: "26%", width: "10%" }
+                    { left: "13.5%", top: "26%", width: "8.5%" }
                 }
             >
                 <img
-                    src="img/home.png"
+                    src="img/home2.png"
                     alt=""
                     className="flex"
-                    style={{ width: "75%",}}
                 />
                 <div
                     className="
                 absolute 
-                text-yellow-200 
                 opacity-0 
                 hover:opacity-100 
                 transition 
@@ -112,7 +110,7 @@ export function GoHome() {
                 flex 
                 items-center 
                 justify-center"
-                    style={{ left: "0", top: "18%", width: "88%", height: "90%", fontSize: "27px" }}
+                    style={{ left: "0", top: "0", width: "100%", height: "90%", fontSize: "30px", color: "#3df2f5" }}
                 >
                     Home
                 </div>
