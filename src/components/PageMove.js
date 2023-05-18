@@ -92,11 +92,11 @@ export function GoHome() {
         absolute
         "
                 style={
-                    { left: "13.5%", top: "26%", width: "8.5%" }
+                    { left: "13.5%", top: "42%", width: "8.5%" }
                 }
             >
                 <img
-                    src="img/home2.png"
+                    src="img/home4.png"
                     alt=""
                     className="flex"
                 />
@@ -110,7 +110,7 @@ export function GoHome() {
                 flex 
                 items-center 
                 justify-center"
-                    style={{ left: "0", top: "0", width: "100%", height: "90%", fontSize: "30px", color: "#3df2f5" }}
+                    style={{ left: "2%", top: "25%", width: "100%", height: "90%", fontSize: "30px", color: "#3df2f5" }}
                 >
                     Home
                 </div>
