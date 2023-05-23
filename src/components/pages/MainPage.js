@@ -66,7 +66,7 @@ export default function MainPage() {
                             <div
                                 className="
                         absolute
-                        text-4xl 
+                        text-4xl
                         font-medium  
                         text-white
                         bg-purple-300

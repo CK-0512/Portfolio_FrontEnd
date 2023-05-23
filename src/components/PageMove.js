@@ -11,13 +11,13 @@ export function Backspace() {
         -rotate-90
         "
                 style={
-                    { left: "7%", top: "22%", width: "5.5%", height: "75%" }
+                    { left: "8%", top: "0", width: "28%", height: "100%" }
                 }
                 onClick={(() => navigate(-1))}>
                 <img
                     src="img/backSpace2.png"
                     alt=""
-                    style={{ width: "100%", height: "80%" }}
+                    style={{ width: "100%", height: "90%" }}
                     className="absolute opacity-80"
                 />
                 <div
@@ -32,7 +32,7 @@ export function Backspace() {
                 items-center 
                 justify-center
                 rotate-90"
-                    style={{ left: "-8%", top: "18%", width: "120%", height: "40%", fontSize: "34px" }}
+                    style={{ left: "-8%", top: "24%", width: "120%", height: "40%", fontSize: "34px" }}
                 >
                     Back
                 </div>
@@ -52,7 +52,7 @@ export function Backspace2() {
         -rotate-90
         "
                 style={
-                    { left: "7%", top: "22%", width: "5.5%", height: "75%" }
+                    { left: "8%", top: "0", width: "28%", height: "100%" }
                 }
                 onClick={(() => navigate(-1))}>
                 <img
@@ -92,7 +92,7 @@ export function GoHome() {
         absolute
         "
                 style={
-                    { left: "13.5%", top: "42%", width: "8.5%" }
+                    { left: "45%", top: "15%", width: "50%" }
                 }
             >
                 <img
