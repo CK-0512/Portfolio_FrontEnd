@@ -6,6 +6,7 @@ export function Backspace() {
         <>
             <span
                 className="
+                backSpace
         cursor-pointer
         absolute
         -rotate-90
@@ -22,17 +23,9 @@ export function Backspace() {
                 />
                 <div
                     className="
-                absolute 
-                text-yellow-900
-                opacity-0
-                hover:opacity-100 
-                transition 
-                duration-300 
-                flex 
-                items-center 
-                justify-center
-                rotate-90"
-                    style={{ left: "-8%", top: "24%", width: "120%", height: "40%", fontSize: "34px" }}
+                    hover:opacity-100 
+                    "
+                    style={{ left: "-8%", top: "24%", width: "120%", height: "40%" }}
                 >
                     Back
                 </div>
@@ -47,6 +40,7 @@ export function Backspace2() {
         <>
             <span
                 className="
+                backSpace
         cursor-pointer
         absolute
         -rotate-90
@@ -54,26 +48,18 @@ export function Backspace2() {
                 style={
                     { left: "8%", top: "0", width: "28%", height: "100%" }
                 }
-                onClick={(() => navigate(-1))}>
+                onClick={(() => navigate(-2))}>
                 <img
                     src="img/backSpace2.png"
                     alt=""
-                    style={{ width: "100%", height: "80%" }}
+                    style={{ width: "100%", height: "90%" }}
                     className="absolute opacity-80"
                 />
                 <div
                     className="
-                absolute 
-                text-yellow-900
-                opacity-0
-                hover:opacity-100 
-                transition 
-                duration-300 
-                flex 
-                items-center 
-                justify-center
-                rotate-90"
-                    style={{ left: "-8%", top: "18%", width: "120%", height: "40%", fontSize: "34px" }}
+                    hover:opacity-100 
+                    "
+                    style={{ left: "-8%", top: "24%", width: "120%", height: "40%" }}
                 >
                     Back
                 </div>
@@ -88,6 +74,7 @@ export function GoHome() {
             <NavLink
                 to="/MainPage"
                 className="
+                homeButton
         cursor-pointer
         absolute
         "
@@ -102,15 +89,9 @@ export function GoHome() {
                 />
                 <div
                     className="
-                absolute 
-                opacity-0 
                 hover:opacity-100 
-                transition 
-                duration-500 
-                flex 
-                items-center 
-                justify-center"
-                    style={{ left: "2%", top: "25%", width: "100%", height: "90%", fontSize: "30px", color: "#3df2f5" }}
+                "
+                    style={{ left: "2%", top: "25%", width: "100%", height: "90%" }}
                 >
                     Home
                 </div>
