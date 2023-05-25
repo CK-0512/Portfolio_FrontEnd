@@ -41,16 +41,16 @@ body,
     flex-direction: column;
 }
 
-.menuBar>ul>li {
+.menubar_box>ul>li {
     display: flex;
     align-items: center;
 }
 
-.menuBar>ul>li:hover>a {
+.menubar_box>ul>li:hover>a {
     color: rgba(55, 65, 81, 1);
 }
 
-.menuBar>ul>li>a {
+.menubar_box>ul>li>a {
     cursor: pointer;
     font-size: 3.75rem;
     --tw-text-opacity: 1;
@@ -59,7 +59,7 @@ body,
     transition-duration: 500ms;
 }
 
-.backSpace>div {
+.backspace_box>div {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,7 +72,7 @@ body,
     font-size: 34px;
 }
 
-.homeButton>div {
+.homebutton_box>div {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -86,91 +86,91 @@ body,
 
 
 @media (max-width: 1536px) {
-    .menuBar {
+    .menubar_box {
         height: 22.5%;
     }
 
-    .menuBar>ul>li>a {
+    .menubar_box>ul>li>a {
         font-size: 3.375rem;
     } 
 
-    .backSpace>div {
+    .backspace_box>div {
         font-size: 28px;
     }
 
-    .homeButton>div {
+    .homebutton_box>div {
         font-size: 26px;
     }
 }
 
 @media (max-width: 1280px) {
-    .menuBar {
+    .menubar_box {
         height: 20%;
     }
 
-    .menuBar>ul>li>a {
+    .menubar_box>ul>li>a {
         font-size: 3rem;
     } 
 
-    .backSpace>div {
+    .backspace_box>div {
         font-size: 24px;
     }
 
-    .homeButton>div {
+    .homebutton_box>div {
         font-size: 22px;
     }
 }
 
 @media (max-width: 1024px) {
-    .menuBar {
+    .menubar_box {
         height: 17.5%;
     }
 
-    .menuBar>ul>li>a {
+    .menubar_box>ul>li>a {
         font-size: 2.625rem;
     } 
 
-    .backSpace>div {
+    .backspace_box>div {
         font-size: 18px;
     }
 
-    .homeButton>div {
+    .homebutton_box>div {
         font-size: 18px;
     }
 }
 
 @media (max-width: 768px) {
-    .menuBar {
+    .menubar_box {
         height: 15%;
     }
 
-    .menuBar>ul>li>a {
+    .menubar_box>ul>li>a {
         font-size: 2.25rem;
     } 
 
-    .backSpace>div {
+    .backspace_box>div {
         font-size: 15px;
     }
 
-    .homeButton>div {
+    .homebutton_box>div {
         font-size: 14px;
     }
 }
 
 @media (max-width: 640px) {
-    .menuBar {
+    .menubar_box {
         height: 12.5%;
     }
 
-    .menuBar>ul>li>a {
+    .menubar_box>ul>li>a {
         font-size: 1.875rem;
     } 
 
-    .backSpace>div {
+    .backspace_box>div {
         font-size: 12px;
     }
 
-    .homeButton>div {
+    .homebutton_box>div {
         font-size: 10px;
     }
 }

@@ -6,7 +6,7 @@ export function MenuBar1() {
     return (
         <>
             <motion.div
-                className="menuBar w-full h-1/4 fixed z-10 flex"
+                className="menubar_box w-full h-1/4 fixed z-10 flex"
                 initial={{ y: "-90%" }}
                 whileHover={{ y: "-15%" }}
             >

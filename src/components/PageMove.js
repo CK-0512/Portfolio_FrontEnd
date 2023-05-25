@@ -6,7 +6,7 @@ export function Backspace() {
         <>
             <span
                 className="
-                backSpace
+                backspace_box
         cursor-pointer
         absolute
         -rotate-90
@@ -40,7 +40,7 @@ export function Backspace2() {
         <>
             <span
                 className="
-                backSpace
+                backspace_box
         cursor-pointer
         absolute
         -rotate-90
@@ -74,7 +74,7 @@ export function GoHome() {
             <NavLink
                 to="/MainPage"
                 className="
-                homeButton
+                home_box
         cursor-pointer
         absolute
         "

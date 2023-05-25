@@ -15,10 +15,10 @@ export default function MainPage() {
 
     return (
         <>
-        <button
-            className="z-50" 
-            onClick={() => setOpacitied(1)}>초기화</button>
-            <div className="h-full w-full relative">
+            <button
+                className="z-50"
+                onClick={() => setOpacitied(1)}>초기화</button>
+            <div className="main_box h-full w-full relative">
                 <MenuBar1 />
                 {/* <button onClick={() => setOpacities(50)}>초기화</button> */}
                 <div
