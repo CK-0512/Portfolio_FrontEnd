@@ -7,8 +7,8 @@ export function MenuBar1() {
         <>
             <motion.div
                 className="menubar_box w-full h-1/4 fixed z-10 flex"
-                initial={{ y: "-90%" }}
-                whileHover={{ y: "-15%" }}
+            //initial={{ y: "-90%" }}
+            //whileHover={{ y: "-15%" }}
             >
 
                 <img src="img/menubar.png" alt="" className="w-full h-full" />

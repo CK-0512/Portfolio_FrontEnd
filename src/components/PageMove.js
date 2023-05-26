@@ -1,5 +1,4 @@
 import { NavLink, useNavigate } from "react-router-dom";
-
 export function Backspace() {
     const navigate = useNavigate();
     return (
@@ -74,18 +73,16 @@ export function GoHome() {
             <NavLink
                 to="/MainPage"
                 className="
-                home_box
+                homebutton_box
         cursor-pointer
         absolute
         "
                 style={
-                    { left: "45%", top: "15%", width: "50%" }
+                    { left: "45%", top: "15%", width: "50%", height: "70%" }
                 }
             >
-                <img
-                    src="img/home4.png"
-                    alt=""
-                    className="flex"
+                <div
+                    className="flex h-full"
                 />
                 <div
                     className="

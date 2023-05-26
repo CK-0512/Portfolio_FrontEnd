@@ -69,10 +69,10 @@ body,
     transition-duration: 500ms;
     rotate: 90deg;
     color: rgba(120, 53, 15, 1);
-    font-size: 34px;
+    font-size: 2.125rem;
 }
 
-.homebutton_box>div {
+.homebutton_box>div:last-child {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -81,7 +81,13 @@ body,
     transition: opacity;
     transition-duration: 500ms;
     color: #3df2f5;
-    font-size: 30px;
+    font-size: 1.875rem;
+}
+
+.homebutton_box>div:first-child {
+    animation-name: warp;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
 }
 
 
@@ -95,11 +101,11 @@ body,
     } 
 
     .backspace_box>div {
-        font-size: 28px;
+        font-size: 1.75rem;
     }
 
-    .homebutton_box>div {
-        font-size: 26px;
+    .homebutton_box>div:last-child {
+        font-size: 1.625rem;
     }
 }
 
@@ -113,11 +119,11 @@ body,
     } 
 
     .backspace_box>div {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
 
-    .homebutton_box>div {
-        font-size: 22px;
+    .homebutton_box>div:last-child {
+        font-size: 1.375rem;
     }
 }
 
@@ -131,11 +137,11 @@ body,
     } 
 
     .backspace_box>div {
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 
-    .homebutton_box>div {
-        font-size: 18px;
+    .homebutton_box>div:last-child {
+        font-size: 1.125rem;
     }
 }
 
@@ -149,11 +155,11 @@ body,
     } 
 
     .backspace_box>div {
-        font-size: 15px;
+        font-size: 0.9375rem;
     }
 
-    .homebutton_box>div {
-        font-size: 14px;
+    .homebutton_box>div:last-child {
+        font-size: 0.875rem;
     }
 }
 
@@ -167,10 +173,18 @@ body,
     } 
 
     .backspace_box>div {
-        font-size: 12px;
+        font-size: 0.75rem;
     }
 
-    .homebutton_box>div {
-        font-size: 10px;
+    .homebutton_box>div:last-child {
+        font-size: 0.625rem;
     }
+}
+
+@keyframes warp {
+    0% {left: 0px; top: 0px; background-image: url("/public/img/home1.png");}
+    25% {left: 0px; top: 0px; background-image: url("/public/img/home2.png");}
+    50% {left: 0px; top: 0px; background-image: url("/public/img/home3.png");}
+    75% {left: 0px; top: 0px; background-image: url("/public/img/home4.png");}
+    100% {left: 0px; top: 0px; background-image: url("/public/img/home5.png");}
 }
