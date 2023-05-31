@@ -59,9 +59,9 @@ export function MenuBar2() {
     return (
         <>
             <motion.div
-                className="menuBar w-full h-20 sm:h-30 lg:h-1/6 xl:h-1/5 2xl:h-1/4 fixed z-10 flex"
-                initial={{ y: "-90%" }}
-                whileHover={{ y: "-15%" }}
+                className="menubar_box w-full h-1/4 fixed z-10 flex"
+            //initial={{ y: "-90%" }}
+            //whileHover={{ y: "-15%" }}
             >
 
                 <img src="img/menubar.png" alt="" className="w-full h-full" />

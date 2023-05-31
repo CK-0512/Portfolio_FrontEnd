@@ -78,11 +78,12 @@ export function GoHome() {
         absolute
         "
                 style={
-                    { left: "45%", top: "15%", width: "50%", height: "70%" }
+                    { left: "45%", top: "15%", width: "50%" }
                 }
             >
-                <div
-                    className="flex h-full"
+                <img
+                    src="img/home1.png"
+                    alt=""
                 />
                 <div
                     className="
