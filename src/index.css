@@ -67,7 +67,6 @@ body,
     opacity: 0;
     transition: opacity;
     transition-duration: 500ms;
-    rotate: 90deg;
     color: rgba(120, 53, 15, 1);
     font-size: 2.125rem;
 }

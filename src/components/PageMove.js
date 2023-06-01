@@ -8,10 +8,9 @@ export function Backspace() {
                 backspace_box
         cursor-pointer
         absolute
-        -rotate-90
         "
                 style={
-                    { left: "8%", top: "0", width: "28%", height: "100%" }
+                    { left: "3%", top: "16%", width: "37%", height: "75%" }
                 }
                 onClick={(() => navigate(-1))}>
                 <img
@@ -42,10 +41,9 @@ export function Backspace2() {
                 backspace_box
         cursor-pointer
         absolute
-        -rotate-90
         "
                 style={
-                    { left: "8%", top: "0", width: "28%", height: "100%" }
+                    { left: "0", top: "14%", width: "37%", height: "80%" }
                 }
                 onClick={(() => navigate(-2))}>
                 <img
@@ -78,12 +76,13 @@ export function GoHome() {
         absolute
         "
                 style={
-                    { left: "45%", top: "15%", width: "50%" }
+                    { left: "45%", top: "5%", width: "50%", height: "90%" }
                 }
             >
                 <img
                     src="img/home1.png"
                     alt=""
+                    style={{ width: "95%", height: "90%" }}
                 />
                 <div
                     className="
